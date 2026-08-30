@@ -26,7 +26,7 @@ const zhipu = createOpenAICompatible({
 });
 
 // 设置 API 允许的最大执行时间 (防止流式输出超时)
-export const maxDuration = 30;
+export const maxDuration = 10;
 
 export async function POST(req: NextRequest) {
     try {
