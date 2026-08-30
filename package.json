@@ -1,6 +1,7 @@
 {
   "name": "unitree-ai-clone",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,12 +10,28 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^4.0.52",
+    "@ai-sdk/openai-compatible": "^3.0.41",
+    "@ai-sdk/react": "^4.0.88",
+    "@langchain/community": "^1.1.28",
+    "@langchain/core": "^1.2.9",
+    "@langchain/openai": "^1.5.10",
+    "@langchain/textsplitters": "^1.0.1",
+    "@supabase/supabase-js": "^2.112.4",
+    "ai": "^7.0.85",
+    "dotenv": "^17.4.2",
+    "jsonwebtoken": "^9.0.3",
+    "langchain": "^1.5.10",
+    "lucide-react": "^1.37.0",
     "next": "16.3.3",
+    "openai": "^7.8.0",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

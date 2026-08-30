@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import FloatingChat from "@/app/components/FloatingChat"; // 引入组件
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* 页面内容 */}
+        <main className="min-h-screen">
+          {children}
+        </main>
+
+        {/* 全局悬浮 AI 助手 */}
+        <FloatingChat />
+      </body>
     </html>
   );
 }
